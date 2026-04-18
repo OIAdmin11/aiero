@@ -1,0 +1,681 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="assets/bootstrap/css/bootstrap-select.min.css" />
+  <!-- icon css-->
+  <link rel="stylesheet" href="assets/elagent-icon/style.css" />
+  <link rel="stylesheet" href="assets/font-awesome/css/all.css" />
+  <link rel="stylesheet" href="assets/niceselectpicker/nice-select.css" />
+  <link rel="stylesheet" href="assets/font-size/css/rvfs.css" />
+  <link rel="stylesheet" href="assets/animation/animate.css" />
+  <link rel="stylesheet" href="assets/video/video-js.css" />
+  <link rel="stylesheet" href="assets/tooltipster/css/tooltipster.bundle.css" />
+  <link rel="stylesheet" href="assets/prism/prism.css" />
+  <link rel="stylesheet" href="assets/prism/prism-coy.css" />
+  <link rel="stylesheet" href="assets/magnify-pop/magnific-popup.css" />
+  <link rel="stylesheet" href="assets/mcustomscrollbar/jquery.mCustomScrollbar.min.css" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/responsive.css" />
+  <title>
+    Aiero — AI Agency &amp; Technology (React + Vite) | Documentation
+  </title>
+</head>
+
+<body class="doc full-width-doc sticky-nav-doc onepage-doc" data-spy="scroll" data-target=".navbar" data-offset="0">
+  <div class="body_wrapper sticky_menu">
+    <nav class="navbar navbar-expand-lg menu_one menu_logo_change">
+      <div class="container-fluid pl-60 pr-60">
+        <a class="navbar-brand" href="index.html">
+          <img class="logo" src="img/logo.svg" height="60" alt="logo" />
+        </a>
+        <button class="navbar-toggler collapsed" type="button" data-toggle="collapse"
+          data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+          aria-label="Toggle navigation">
+          <span class="menu_toggle">
+            <span class="hamburger">
+              <span></span>
+              <span></span>
+              <span></span>
+            </span>
+            <span class="hamburger-cross">
+              <span></span>
+              <span></span>
+            </span>
+          </span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="ml-auto navbar-nav menu">
+            <li class="nav-item">
+              <a href="https://themeforest.net/user/elite-themes24" target="_blank" rel="noopener noreferrer"
+                class="nav-link dropdown-toggle">ThemeForest — elite-themes24</a>
+            </li>
+            <li class="nav-item">
+              <a href="https://themeforest.net/user/elite-themes24/portfolio" target="_blank" rel="noopener noreferrer"
+                class="nav-link dropdown-toggle">Purchase</a>
+            </li>
+            <li class="nav-item">
+              <a href="https://themeforest.net/user/elite-themes24" target="_blank" rel="noopener noreferrer"
+                class="action_btn btn_small_two">More templates <i class="arrow_right"></i></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <section class="doc_documentation_area onepage_doc_area" id="sticky_doc">
+      <div class="overlay_bg"></div>
+      <div class="container-fluid pl-60 pr-60">
+        <div class="row doc-container">
+          <div class="col-lg-2 doc_mobile_menu doc-sidebar display_none">
+            <!-- Start Asid area  -->
+            <aside class="doc_left_sidebarlist">
+              <h3 class="nav_title">Doc NAVIGATION</h3>
+              <div class="scroll">
+                <ul class="list-unstyled nav-sidebar doc-nav">
+                  <li class="nav-item">
+                    <a href="#getting_started" class="nav-link"><img src="img/onepage-icon/smiles-icon.png"
+                        alt="" />Getting Started</a>
+                    <ul class="list-unstyled dropdown_nav">
+                      <li class="nav-item">
+                        <a href="#requirements" class="nav-link">Requirements</a>
+                      </li>
+                      <li class="nav-item">
+                        <a href="#whats_included" class="nav-link">What's Included</a>
+                      </li>
+                    </ul>
+                    <span class="icon">
+                      <i class="icon_plus"></i>
+                      <i class="icon_minus-06"></i>
+                    </span>
+                  </li>
+                  <li class="nav-item">
+                    <a href="#React_installation" class="nav-link"><img src="img/react.png" alt="" />Install &amp;
+                      scripts</a>
+                  </li>
+
+                  <li class="nav-item">
+                    <a href="#basic_site_setting" class="nav-link"><img src="img/side-nav/rc12.png" alt="Frisk" />Basic
+                      Site Setting</a>
+                    <ul class="list-unstyled dropdown_nav">
+                      <li class="nav-item">
+                        <a href="#change_site_title_and_favicon" class="nav-link">Change Site Title and Favicon</a>
+                      </li>
+                      <li class="nav-item">
+                        <a href="#change_logo" class="nav-link">Change Logo</a>
+                      </li>
+                    </ul>
+                    <span class="icon">
+                      <i class="icon_plus"></i>
+                      <i class="icon_minus-06"></i>
+                    </span>
+                  </li>
+                  <li class="nav-item">
+                    <a href="#template_options" class="nav-link"><img src="img/side-nav/gear.png" alt="Frisk" />Template
+                      Options</a>
+                    <ul class="list-unstyled dropdown_nav">
+                      <li class="nav-item">
+                        <a href="#header" class="nav-link">Header</a>
+                      </li>
+                      <li class="nav-item">
+                        <a href="#about" class="nav-link">About Section</a>
+                      </li>
+                      <li class="nav-item">
+                        <a href="#contact" class="nav-link">Contact</a>
+                      </li>
+                      <li class="nav-item">
+                        <a href="#socials" class="nav-link">Socials</a>
+                      </li>
+
+                      <li class="nav-item">
+                        <a href="#portfolio" class="nav-link">Projects</a>
+                      </li>
+
+                      <li class="nav-item">
+                        <a href="#all-data" class="nav-link">All Data</a>
+                      </li>
+                    </ul>
+                    <span class="icon">
+                      <i class="icon_plus"></i>
+                      <i class="icon_minus-06"></i>
+                    </span>
+                  </li>
+                  <li class="nav-item">
+                    <a href="#change-log" class="nav-link"><img src="img/side-nav/document2.png" alt="Frisk" />Change
+                      Log</a>
+                  </li>
+                </ul>
+              </div>
+            </aside>
+            <!-- End Asid area  -->
+          </div>
+          <div class="col-lg-8 col-md-8">
+            <div class="documentation_info" id="post">
+              <article class="pt-0 documentation_body doc-section" id="getting_started">
+                <div class="shortcode_title">
+                  <h1>Getting Started</h1>
+                  <p>
+                    Welcome to
+                    <strong>Aiero — AI Agency &amp; Technology</strong>
+                    (React + Vite single-page application). Thank you for
+                    using this template.
+                  </p>
+                  <p>
+                    The project is built with <strong>React 19</strong>,
+                    <strong>Vite 8</strong>, <strong>React Router 7</strong>,
+                    and <strong>Sass</strong>. It includes multiple home
+                    demos, inner pages, blog, shop, and service layouts—routed
+                    from <code>src/App.tsx</code> with lazy-loaded page
+                    chunks.
+                  </p>
+                  <p>
+                    Global styles load from
+                    <code>src/styles/styles.scss</code> (entry in
+                    <code>src/main.tsx</code>). Shared “inner / blog /
+                    services / shop” shells live under
+                    <code>src/pages/layouts/</code>.
+                  </p>
+                </div>
+                <div class="shortcode_title" id="requirements">
+                  <h2>Requirements</h2>
+                  <p>
+                    Install <strong>Node.js</strong> (LTS recommended, e.g.
+                    20.x or 22.x) and use <strong>npm</strong> (included) or
+                    <strong>Yarn</strong>/<strong>pnpm</strong> if you prefer.
+                  </p>
+                </div>
+                <h3 class="c_head load-order-2" id="node-recommended">
+                  Recommended Node.js
+                </h3>
+                <img class="w-100 img-thumbnail" src="img/educrat/installation/1.png" alt="installation" />
+                <br />
+                <br />
+                <img class="w-100 img-thumbnail" src="img/educrat/installation/2.png" alt="installation" />
+                <br />
+                <br />
+
+                <h3 class="c_head load-order-2">
+                  Install Vite globally in your pc with this command:
+                </h3>
+
+                <img class="w-100 img-thumbnail" src="img/vite-global.png" alt="installation" />
+                <br />
+                <br />
+
+                <h3 class="c_head load-order-2">Check Vite Version:</h3>
+
+                <img class="w-100 img-thumbnail" src="img/vite-v.png" alt="installation" />
+                <br />
+                <br />
+                <h4 class="c_head load-order-2" id="php-configuration-limits">
+                  Install Yarn
+                </h4>
+                <img class="w-100 img-thumbnail" src="img/educrat/installation/3.png" alt="installation" />
+                <br />
+                <br />
+
+                <div class="shortcode_title" id="whats_included">
+                  <h2>What's Included</h2>
+                  <p>
+                    After purchase on ThemeForest, download the package and
+                    extract it. Typical top-level contents:
+                  </p>
+                  <img class="w-100 img-thumbnail" src="img/file.png" alt="whats-included" />
+                </div>
+
+                <h3 class="c_head load-order-2" id="template-package">
+                  Main folders
+                </h3>
+                <div class="steps-panel">
+                  <ul class="ordered-list">
+                    <li>
+                      <strong>src/</strong> — React app:
+                      <code>App.tsx</code> (routes), <code>pages/</code>,
+                      <code>components/</code>, <code>data/</code>,
+                      <code>context/</code>, <code>styles/</code>
+                    </li>
+                    <li>
+                      <strong>public/</strong> — Static assets served at the
+                      site root (e.g. <code>/assets/images/</code>,
+                      <code>favicon.ico</code>)
+                    </li>
+                    <li>
+                      <strong>documentation/</strong> — This HTML
+                      documentation (open
+                      <code>documentation/index.html</code> in a browser)
+                    </li>
+                  </ul>
+                </div>
+              </article>
+              <article class="documentation_body doc-section" id="React_installation">
+                <div class="shortcode_title">
+                  <h2>Installation &amp; scripts</h2>
+                  <p>
+                    From the project root (where
+                    <code>package.json</code> lives):
+                  </p>
+                </div>
+                <div class="steps-panel">
+                  <ol class="ordered-list">
+                    <li>
+                      <strong>Install dependencies</strong>
+                      <pre class="language-bash"><code>npm install</code></pre>
+                    </li>
+                    <li>
+                      <strong>Development server</strong> (Vite default port
+                      <strong>5173</strong>)
+                      <pre class="language-bash"><code>npm run dev</code></pre>
+                      <p>
+                        Open
+                        <a href="http://localhost:5173" target="_blank"
+                          rel="noopener noreferrer">http://localhost:5173</a>
+                      </p>
+                    </li>
+                    <li>
+                      <strong>Production build</strong> — output in
+                      <code>dist/</code>
+                      <pre class="language-bash"><code>npm run build</code></pre>
+                    </li>
+                    <li>
+                      <strong>Preview production build locally</strong>
+                      <pre class="language-bash"><code>npm run preview</code></pre>
+                    </li>
+                  </ol>
+                  <p>
+                    <strong>Deploying:</strong> Host the contents of
+                    <code>dist/</code> on any static host (Netlify, Vercel,
+                    S3, etc.). Configure the server to serve
+                    <code>index.html</code> for client-side routes (SPA
+                    fallback).
+                  </p>
+                </div>
+              </article>
+              <article class="documentation_body doc-section" id="basic_site_setting">
+                <div class="shortcode_title" id="change_site_title_and_favicon">
+                  <h2 class="load-order-2">
+                    Change site title &amp; favicon
+                  </h2>
+                  <p>
+                    <strong>Initial HTML title &amp; favicon (before React
+                      mounts):</strong>
+                    edit the project root <code>index.html</code> — update
+                    <code>&lt;title&gt;…&lt;/title&gt;</code> and the
+                    <code>&lt;link rel="icon" …&gt;</code> (place icons under
+                    <code>public/</code>, e.g.
+                    <code>public/favicon.ico</code> referenced as
+                    <code>/favicon.ico</code>).
+                  </p>
+                  <p>
+                    <strong>Per-route page titles (after navigation):</strong>
+                    strings live in <code>src/data/pages.ts</code> (<code>getPageMetadata()</code>
+                    updates <code>document.title</code>
+                    and meta tags). Add or adjust keys for new routes.
+                  </p>
+                  <figure>
+                    <img class="w-100 img-thumbnail" src="img/Lightshot/fav.png" alt="Favicon reference" />
+                    <figcaption class="text-center">
+                      Replace favicon under <code>public/</code> and keep
+                      <code>index.html</code> link in sync
+                    </figcaption>
+                  </figure>
+                  <figure>
+                    <img class="w-100 img-thumbnail" src="img/Lightshot/meta.png" alt="Meta title reference" />
+                    <figcaption class="text-center">
+                      Default document title in <code>index.html</code>;
+                      per-page titles in <code>src/data/pages.ts</code>
+                    </figcaption>
+                  </figure>
+                </div>
+
+                <div class="shortcode_title" id="change_logo">
+                  <h2 class="load-order-2">Change logo</h2>
+                  <p>
+                    Logo images are loaded from
+                    <code>public/assets/images/</code> (URLs like
+                    <code>/assets/images/logo.svg</code>). Replace files there
+                    or update the <code>src</code> paths in header/footer
+                    components under <code>src/components/headers/</code> and
+                    <code>src/components/footers/</code>.
+                  </p>
+                </div>
+              </article>
+
+              <article class="documentation_body doc-section" id="template_options">
+                <div class="shortcode_title" id="header">
+                  <h2 class="load-order-2" id="header_title">
+                    Header &amp; navigation
+                  </h2>
+                  <p>Header variants and nav markup live under:</p>
+                  <div class="steps-panel">
+                    <ol class="ordered-list">
+                      <li>
+                        <span class="direction_steps">
+                          <span class="direction_step">src</span> →
+                          <span class="direction_step">components</span> →
+                          <span class="direction_step">headers</span>
+                        </span>
+                        (e.g. <code>Header1.tsx</code>,
+                        <code>Header4.tsx</code>, <code>Nav.tsx</code>,
+                        <code>MobileMenu.tsx</code>)
+                      </li>
+                      <li>
+                        Mobile menu structure:
+                        <code>src/data/mobileMenu.ts</code>
+                      </li>
+                    </ol>
+                  </div>
+                  <figure>
+                    <img class="w-100 img-thumbnail" src="img/Lightshot/header.png" alt="Headers folder" />
+                    <figcaption class="text-center">
+                      Edit header components and shared nav data as needed
+                    </figcaption>
+                  </figure>
+                </div>
+
+                <div class="shortcode_title" id="about">
+                  <h2 class="load-order-2" id="hero_title">
+                    Home sections (about, hero, …)
+                  </h2>
+                  <p>
+                    Each home demo uses components under
+                    <code>src/components/homes/</code> (e.g.
+                    <code>homes/home-1/</code>, <code>homes/home-2/</code>,
+                    …). Page entry files are in
+                    <code>src/pages/homes/index1/</code> through
+                    <code>index17/</code>.
+                  </p>
+                  <div class="steps-panel">
+                    <ol class="ordered-list">
+                      <li>
+                        <span class="direction_steps">
+                          <span class="direction_step">src</span> →
+                          <span class="direction_step">components</span> →
+                          <span class="direction_step">homes</span> →
+                          <span class="direction_step">home-*</span>
+                        </span>
+                      </li>
+                    </ol>
+                  </div>
+                  <figure>
+                    <img class="w-100 img-thumbnail" src="img/Lightshot/homes.png" alt="Home sections" />
+                    <figcaption class="text-center">
+                      Adjust section components for the demo you are
+                      customizing
+                    </figcaption>
+                  </figure>
+                </div>
+
+                <div class="shortcode_title" id="contact">
+                  <h2 class="load-order-2" id="homepages_title">
+                    Contact section component
+                  </h2>
+                  <p>Reusable contact block (used in layouts and pages):</p>
+                  <div class="steps-panel">
+                    <ol class="ordered-list">
+                      <li>
+                        <span class="direction_steps">
+                          <span class="direction_step">src</span> →
+                          <span class="direction_step">components</span> →
+                          <span class="direction_step">contact</span>
+                        </span>
+                        — <code>Contact.tsx</code>,
+                        <code>ContactForm.tsx</code>,
+                        <code>ContactBanner.tsx</code>
+                      </li>
+                    </ol>
+                  </div>
+                  <figure>
+                    <img class="w-100 img-thumbnail" src="img/Lightshot/contact.png" alt="Contact components" />
+                    <figcaption class="text-center">
+                      Shell layout:
+                      <code>src/pages/layouts/ShellLayout.tsx</code> wraps
+                      inner/blog/shop routes with header + outlet + contact +
+                      footer
+                    </figcaption>
+                  </figure>
+                </div>
+
+                <div class="shortcode_title" id="socials">
+                  <h2 class="load-order-2" id="homepages_title">
+                    Social links (header / footer)
+                  </h2>
+                  <p>
+                    Top-bar social icons are defined in header components
+                    (e.g. <code>Header4.tsx</code>). Footer socials:
+                    <code>src/components/footers/</code>. Use Font Awesome
+                    classes (<code>fab fa-…</code>); styles come from
+                    <code>@fortawesome/fontawesome-free</code> imported in
+                    <code>src/main.tsx</code>.
+                  </p>
+                  <div class="steps-panel">
+                    <ol class="ordered-list">
+                      <li>
+                        <span class="direction_steps">
+                          <span class="direction_step">src</span> →
+                          <span class="direction_step">components</span> →
+                          <span class="direction_step">headers</span>
+                        </span>
+                        or
+                        <span class="direction_steps">
+                          <span class="direction_step">footers</span>
+                        </span>
+                      </li>
+                    </ol>
+                  </div>
+                  <figure>
+                    <img class="w-100 img-thumbnail" src="img/Lightshot/socials.png" alt="Social links" />
+                    <figcaption class="text-center">
+                      Edit markup in the relevant header/footer component
+                    </figcaption>
+                  </figure>
+                </div>
+
+                <div class="shortcode_title" id="portfolio">
+                  <h2 class="load-order-2" id="blog_archive_title">
+                    Projects / portfolio
+                  </h2>
+                  <p>
+                    Project cards and grids use data from
+                    <code>src/data/projects.ts</code> and page components
+                    under <code>src/pages/inner-pages/project/</code>,
+                    <code>project2/</code>, <code>project-single/</code>.
+                  </p>
+                  <div class="steps-panel">
+                    <ol class="ordered-list">
+                      <li>
+                        <span class="direction_steps">
+                          <span class="direction_step">src</span> →
+                          <span class="direction_step">data</span> →
+                          <span class="direction_step">projects.ts</span>
+                        </span>
+                      </li>
+                      <li>
+                        <span class="direction_steps">
+                          <span class="direction_step">src</span> →
+                          <span class="direction_step">components</span> →
+                          <span class="direction_step">others-pages</span>
+                        </span>
+                        (gallery / project sections as needed)
+                      </li>
+                    </ol>
+                  </div>
+                  <figure>
+                    <img class="w-100 img-thumbnail" src="img/Lightshot/project.png" alt="Projects data" />
+                    <figcaption class="text-center">
+                      Update project entries in <code>projects.ts</code> and
+                      related page components
+                    </figcaption>
+                  </figure>
+                </div>
+
+                <div class="shortcode_title" id="all-data">
+                  <h2 class="load-order-2" id="copy_right_title">
+                    Central data &amp; routing
+                  </h2>
+                  <p>
+                    Static copy, menus, blog posts, shop products, pricing
+                    tables, and page metadata are grouped under
+                    <code>src/data/</code> (e.g. <code>blog.ts</code>,
+                    <code>shop.ts</code>, <code>pages.ts</code>,
+                    <code>demo.ts</code>). Routes and lazy imports are
+                    declared in <code>src/App.tsx</code>; the 404 page is
+                    <code>src/pages/not-found/index.tsx</code>
+                    (<code>path="*"</code>).
+                  </p>
+                  <div class="steps-panel">
+                    <ol class="ordered-list">
+                      <li>
+                        <span class="direction_steps">
+                          <span class="direction_step">src</span> →
+                          <span class="direction_step">data</span>
+                        </span>
+                      </li>
+                    </ol>
+                  </div>
+                  <figure>
+                    <img class="w-100 img-thumbnail" src="img/Lightshot/data.png" alt="src/data folder" />
+                    <figcaption class="text-center">
+                      Prefer editing data modules instead of hard-coding long
+                      text in JSX
+                    </figcaption>
+                  </figure>
+                </div>
+              </article>
+
+              <article class="documentation_body doc-section" id="change-log">
+                <div class="shortcode_title">
+                  <h2 class="load-order-2" id="changelog_title">
+                    Change Log
+                  </h2>
+                  <p>
+                    <strong><a target="_blank" href="https://themeforest.net/user/elite-themes24"
+                        rel="noopener noreferrer">elite-themes24</a></strong>
+                    — updates and fixes for the Aiero React (Vite) package.
+                  </p>
+                </div>
+                <div class="changelog_inner">
+                  <div class="row changelog_info" id="v100">
+                    <div class="col-lg-3 changelog_date">
+                      <div class="c_date">
+                        <h6>March 2026</h6>
+                        <p>Documentation refresh</p>
+                      </div>
+                    </div>
+                    <div class="col-lg-2">
+                      <div class="version_info">
+                        <div class="c_version">1.0.0</div>
+                      </div>
+                    </div>
+                    <div class="col-lg-7">
+                      <div class="changelog_content">
+                        <p>
+                          <span class="new">Docs</span> Aiero React + Vite:
+                          paths for <code>src/</code>, <code>public/</code>,
+                          layouts, data, routes, deployment.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- End .row -->
+                </div>
+                <div class="border_bottom"></div>
+                <div class="row feedback_link">
+                  <div class="col-lg-6">
+                    <h6>
+                      <i class="icon_mail_alt"></i>Support
+                      <a href="https://themeforest.net/user/elite-themes24" target="_blank"
+                        rel="noopener noreferrer">ThemeForest profile — elite-themes24</a>
+                    </h6>
+                  </div>
+                  <div class="col-lg-6">
+                    <p>
+                      If this template helped your project,
+                      <a href="https://themeforest.net/downloads" target="_blank" rel="noopener noreferrer"
+                        class="h_btn">please rate it on ThemeForest</a>
+                    </p>
+                  </div>
+                </div>
+              </article>
+            </div>
+          </div>
+          <div class="col-lg-2 col-md-4 doc_right_mobile_menu">
+            <div class="open_icon" id="right">
+              <i class="arrow_carrot-left"></i>
+              <i class="arrow_carrot-right"></i>
+            </div>
+            <div class="doc_rightsidebar">
+              <div class="d-flex justify-content-between align-items-center">
+                <div id="rvfs-controllers" class="fontsize-controllers group"></div>
+                <a href="javascript:window.print()" class="print"><i class="icon_printer"></i></a>
+              </div>
+              <div class="doc_switch">
+                <label for="something" class="tab-btn tab-btns"><i class="icon_lightbulb_alt"></i></label>
+                <input type="checkbox" name="something" id="something" class="tab_switcher" />
+                <label for="something" class="tab-btn"><i class="far fa-moon"></i></label>
+              </div>
+              <div class="hire-us">
+                <p class="explanation hire expn-left">
+                  For customization or licensing questions, use the contact
+                  options on your ThemeForest download / author page.
+                  <br /><br /><a href="https://themeforest.net/user/elite-themes24"
+                    title="elite-themes24 on ThemeForest" target="_blank" rel="noopener noreferrer"
+                    class="action_btn btn_small">Author profile<i class="arrow_right"></i></a>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer class="simple_footer">
+      <img class="leaf_right" src="img/home_one/leaf_footter.png" alt="Frisk" />
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6">
+            <p>
+              © 2026 Aiero — documentation for the React (Vite) build. Author:
+              <a target="_blank" href="https://themeforest.net/user/elite-themes24"
+                rel="noopener noreferrer">elite-themes24</a>
+            </p>
+          </div>
+          <div class="text-right col-lg-6">
+            <ul class="list-unstyled f_social_icon">
+              <li>
+                <a target="_blank" href="https://youtu.be/kIOLleIMbBk"><i class="social_youtube"></i></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </div>
+
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="js/jquery-3.2.1.min.js"></script>
+  <script src="assets/bootstrap/js/popper.min.js"></script>
+  <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+  <script src="assets/bootstrap/js/bootstrap-select.min.js"></script>
+  <script src="js/parallaxie.js"></script>
+  <script src="js/TweenMax.min.js"></script>
+  <script src="js/anchor.js"></script>
+  <script src="assets/wow/wow.min.js"></script>
+  <script src="assets/prism/prism.js"></script>
+  <script src="assets/niceselectpicker/jquery.nice-select.min.js"></script>
+  <script src="assets/mcustomscrollbar/jquery.mCustomScrollbar.concat.min.js"></script>
+  <script src="assets/magnify-pop/jquery.magnific-popup.min.js"></script>
+  <script src="assets/tooltipster/js/tooltipster.bundle.min.js"></script>
+  <script src="assets/font-size/js/rv-jquery-fontsize-2.0.3.js"></script>
+  <script src="assets/video/video.min.js"></script>
+  <script src="assets/video/wistia.js"></script>
+  <script src="js/onpage-menu.js"></script>
+  <script src="js/main.js"></script>
+</body>
+
+</html>
