@@ -8,7 +8,5 @@ export const contactForm = defineFunction({
     CONTACT_FORM_TO_EMAIL:
       process.env.CONTACT_FORM_TO_EMAIL ?? "contact@sceneshift.org",
     CONTACT_FORM_FROM_EMAIL: process.env.CONTACT_FORM_FROM_EMAIL ?? "",
-    CONTACT_FORM_ALLOWED_ORIGIN:
-      process.env.CONTACT_FORM_ALLOWED_ORIGIN ?? "*",
   },
 });

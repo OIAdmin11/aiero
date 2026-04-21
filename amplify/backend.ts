@@ -15,14 +15,17 @@ const backend = defineBackend({
 });
 
 const apiStack = backend.createStack("contact-form-api");
-const allowedOrigin = process.env.CONTACT_FORM_ALLOWED_ORIGIN ?? "*";
+const allowedOrigins = [
+  "https://sceneshift.org",
+  "https://www.sceneshift.org",
+];
 
 const httpApi = new HttpApi(apiStack, "ContactFormHttpApi", {
   apiName: "contact-form-api",
   corsPreflight: {
     allowMethods: [CorsHttpMethod.POST, CorsHttpMethod.OPTIONS],
     allowHeaders: ["content-type"],
-    allowOrigins: [allowedOrigin],
+    allowOrigins: allowedOrigins,
   },
   createDefaultStage: true,
 });

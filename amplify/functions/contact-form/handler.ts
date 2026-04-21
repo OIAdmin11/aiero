@@ -11,12 +11,23 @@ type ContactRequest = {
 
 const sesClient = new SESClient({});
 const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+const allowedOrigins = new Set([
+  "https://sceneshift.org",
+  "https://www.sceneshift.org",
+]);
+const defaultOrigin = "https://sceneshift.org";
+
+const resolveOrigin = (requestOrigin?: string) =>
+  requestOrigin && allowedOrigins.has(requestOrigin)
+    ? requestOrigin
+    : defaultOrigin;
 
 const jsonHeaders = (origin: string) => ({
   "Access-Control-Allow-Origin": origin,
   "Access-Control-Allow-Headers": "content-type",
   "Access-Control-Allow-Methods": "POST,OPTIONS",
   "Content-Type": "application/json",
+  Vary: "Origin",
 });
 
 const response = (statusCode: number, origin: string, body: object) => ({
@@ -45,7 +56,7 @@ const validate = (payload: ContactRequest) => {
 };
 
 export const handler: APIGatewayProxyHandlerV2 = async (event) => {
-  const origin = process.env.CONTACT_FORM_ALLOWED_ORIGIN || "*";
+  const origin = resolveOrigin(event.headers.origin);
 
   if (event.requestContext.http.method === "OPTIONS") {
     return {

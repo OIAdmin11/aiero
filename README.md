@@ -56,10 +56,10 @@ Configure these in the Amplify console for the deployed branch:
   Required. Must be a verified SES sender identity in the same AWS region as the backend.
 - `CONTACT_FORM_TO_EMAIL`
   Optional. Defaults to `contact@sceneshift.org`.
-- `CONTACT_FORM_ALLOWED_ORIGIN`
-  Recommended. Set this to the deployed site origin such as `https://sceneshift.org`.
 
 Amplify provides `AWS_APP_ID` and `AWS_BRANCH` during the branch build, which are used by `amplify.yml`.
+
+The contact endpoint only accepts requests from `https://sceneshift.org` and `https://www.sceneshift.org`, so no CORS origin environment variable is required for production.
 
 ## SES checklist
 
